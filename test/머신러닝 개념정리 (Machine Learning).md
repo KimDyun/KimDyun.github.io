@@ -45,12 +45,6 @@
 |![Inductive Learning vs Transductive Learning](https://velog.velcdn.com/images/kimdyun/post/ea851cdd-9319-4862-a47e-99419b6effe2/image.png "Inductive Learning vs Transductive Learning")|
 </center>
 
-<img src="../images/Inductive_Trasductive_Learning_Comparison.PNG", width="1000">
-
-<img src="images/Inductive_Trasductive_Learning_Comparison.PNG", width="1000">
-
-<img src="https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG", width="1000">
-
 위 그림이 Inductive Learning과 Tranductive Learning의 차이를 잘 정리하여 보여주는 것 같아 참조하였다.
 
 <br><br>
@@ -60,17 +54,18 @@
 
 <center>
 
-|![Figure 1](./images/Inductive_Trasductive_Learning_Comparison.PNG)|
+|![Figure 1]([./images/Inductive_Trasductive_Learning_Comparison.PNG](https://user-images.githubusercontent.com/74770095/216779250-9231facb-d789-481f-b530-850da3cb4d8c.PNG))|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
 
 &nbsp; 우선 위 그림 예시에서 **labeled data (training data)** 는 <font style="color:red;"> **A** </font>, <span style="color:red">**B**</span>, <span style="color:blue"> __C__ </font>, <font style="color:blue;">**D**</font>이고 <font style="color:red;">**A**</font>와 <font style="color:red;">**B**</font>는 **class** <font style="color:red;">**red**</font>, <font style="color:blue;">**C**</font> 와 <font style="color:blue;">**D**</font> 는 **class** <font style="color:blue;">**blue**</font>, 나머지 **숫자** 들은 **unlabeled data (testing data)** 이다. 여기서 unlabeled data의 label을 추론해야 하는 상황일 때, Inductive Learning에서는 4개의 training data만을 사용하여 지도 학습 (supervised learning)을 수행한 후 학습된 예측 모델을 testing data에 적용하여 label을 추론하면 된다.
 
+
 <br>
 <center>
 
-|![Figure 2](../../images/Inductive_Trasductive_Learning_Comparison2.PNG)|
+|![Figure 2](https://user-images.githubusercontent.com/74770095/216779277-14f6315e-cc9b-449f-b5aa-72b473b91605.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 2 </font> </b>|
 </center>
@@ -79,26 +74,22 @@
 <br>
 > 여기서, 숫자 10과 12가 잘못 분류되었다고 말할 수는 없다. 하지만, 학습 데이터가 상당히 적기 때문에 10과 12가 class red로 분류된 것에 대해 우리는 당연하게도 신뢰할 수 없다.
 
-![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG)
-
-![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG?raw=true)
 
 <br><br>
 <center>
 
-|![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG)|
+|![Figure 3](https://user-images.githubusercontent.com/74770095/216779279-e5afae25-3ccb-4e82-84a6-2cd7b72c7576.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 3 </font> </b>|
 </center>
 
 &nbsp; 만약 위의 그림 3처럼 Non-Euclidean 공간상의 그래프 데이터에서 데이터 노드 간 엣지 정보가 추가되었다고 가정한다. 또한, 이 엣지는 가중치가 있으며 B와 10 간의 엣지 가중치는 매우 작고 나머지 엣지 가중치는 크다고 가정해본다. 이 때, 이 엣지와 엣지 가중치는 추가적인 연결성 정보를 제공해준다. 앞으로 이 추가 정보를 적극 활용해볼 것이다.
 
-![Figure 4](https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG)
 
 <br><br>
 <center>
 
-|![Figure 4](https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG)|
+|![Figure 4](https://user-images.githubusercontent.com/74770095/216779281-6be144d0-7397-474b-a6b5-8a9dee9c94e2.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 4 </font> </b>|
 </center>
