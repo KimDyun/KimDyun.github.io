@@ -54,7 +54,7 @@
 
 <center>
 
-|![Figure 1]([./images/Inductive_Trasductive_Learning_Comparison.PNG](https://user-images.githubusercontent.com/74770095/216779250-9231facb-d789-481f-b530-850da3cb4d8c.PNG))|
+|![Figure 1](https://user-images.githubusercontent.com/74770095/216779250-9231facb-d789-481f-b530-850da3cb4d8c.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
