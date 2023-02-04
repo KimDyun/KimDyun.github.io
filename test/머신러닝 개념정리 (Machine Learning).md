@@ -53,7 +53,6 @@
 <br>
 
 <center>
-
 |![Figure 1](https://user-images.githubusercontent.com/74770095/216779250-9231facb-d789-481f-b530-850da3cb4d8c.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
@@ -65,7 +64,6 @@
 <br>
 
 <center>
-
 |![Figure 2](https://user-images.githubusercontent.com/74770095/216779277-14f6315e-cc9b-449f-b5aa-72b473b91605.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 2 </font> </b>|
