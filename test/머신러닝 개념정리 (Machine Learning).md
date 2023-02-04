@@ -57,7 +57,7 @@
 
 <center>
 
-|![Fig. 1](./images/Inductive_Trasductive_Learning_Comparison.PNG?raw=true)|
+|![Figure 1](./images/Inductive_Trasductive_Learning_Comparison.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
@@ -67,7 +67,7 @@
 <br>
 <center>
 
-|![Fig. 2](../../images/Inductive_Trasductive_Learning_Comparison2.PNG?raw=true)|
+|![Figure 2](../../images/Inductive_Trasductive_Learning_Comparison2.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 2 </font> </b>|
 </center>
@@ -79,17 +79,21 @@
 <br><br>
 <center>
 
-|![Fig. 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG?raw=true)|
+../images/Inductive_Trasductive_Learning_Comparison3.PNG
+ 
+|![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 3 </font> </b>|
 </center>
 
 &nbsp; 만약 위의 그림 3처럼 Non-Euclidean 공간상의 그래프 데이터에서 데이터 노드 간 엣지 정보가 추가되었다고 가정한다. 또한, 이 엣지는 가중치가 있으며 B와 10 간의 엣지 가중치는 매우 작고 나머지 엣지 가중치는 크다고 가정해본다. 이 때, 이 엣지와 엣지 가중치는 추가적인 연결성 정보를 제공해준다. 앞으로 이 추가 정보를 적극 활용해볼 것이다.
 
+![Figure 4](https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG)
+
 <br><br>
 <center>
 
-|![Fig. 4](https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG)|
+|![Figure 4](https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 4 </font> </b>|
 </center>
