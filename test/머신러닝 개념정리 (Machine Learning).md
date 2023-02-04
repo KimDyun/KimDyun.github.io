@@ -57,7 +57,7 @@
 
 <center>
 
-|![Fig. 1](./images/Inductive_Trasductive_Learning_Comparison.png)|
+|![Fig. 1](./images/Inductive_Trasductive_Learning_Comparison.png?raw=true)|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
@@ -67,7 +67,7 @@
 <br>
 <center>
 
-|![Fig. 2](../../images/Inductive_Trasductive_Learning_Comparison2.png)|
+|![Fig. 2](../../images/Inductive_Trasductive_Learning_Comparison2.png?raw=true)|
 | :--: |
 |<b> <font size = "4" > Figure 2 </font> </b>|
 </center>
@@ -79,7 +79,7 @@
 <br><br>
 <center>
 
-|![Fig. 3](../images/Inductive_Trasductive_Learning_Comparison3.png)|
+|![Fig. 3](../images/Inductive_Trasductive_Learning_Comparison3.png?raw=true)|
 | :--: |
 |<b> <font size = "4" > Figure 3 </font> </b>|
 </center>
@@ -89,7 +89,7 @@
 <br><br>
 <center>
 
-|![Fig. 4](../images/Inductive_Trasductive_Learning_Comparison4.png)|
+|![Fig. 4](https://github.com/KimDyun/KimDyun.github.io/edit/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.png)|
 | :--: |
 |<b> <font size = "4" > Figure 4 </font> </b>|
 </center>
