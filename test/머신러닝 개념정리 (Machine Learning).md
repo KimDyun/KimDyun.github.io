@@ -45,8 +45,11 @@
 |![Inductive Learning vs Transductive Learning](https://velog.velcdn.com/images/kimdyun/post/ea851cdd-9319-4862-a47e-99419b6effe2/image.png "Inductive Learning vs Transductive Learning")|
 </center>
 
+<img src="../images/Inductive_Trasductive_Learning_Comparison.PNG", width="1000">
 
+<img src="images/Inductive_Trasductive_Learning_Comparison.PNG", width="1000">
 
+<img src="https://github.com/KimDyun/KimDyun.github.io/tree/dependabot/bundler/develop/github-pages-gte-209-and-lt-229/images/Inductive_Trasductive_Learning_Comparison4.PNG", width="1000">
 
 위 그림이 Inductive Learning과 Tranductive Learning의 차이를 잘 정리하여 보여주는 것 같아 참조하였다.
 
