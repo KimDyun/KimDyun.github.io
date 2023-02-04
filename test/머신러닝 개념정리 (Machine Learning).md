@@ -1,6 +1,6 @@
 ### :worried: 이번 시간에는 Inductive Learning과 Transductive Learning의 차이점에 대해 소개를 해보려고 한다.
 
-Inductive Learning을 직역하면 귀납적 학습, Transductive Learning은 ... 직역조차 애매하다.
+&nbsp; Inductive Learning을 직역하면 귀납적 학습, Transductive Learning은 ... 직역조차 애매하다.
 단어만 보고 그 개념을 유추하기 어려운 이 두 단어는 아마 영어 원서로 된 책이나 자료로 머신 러닝을 공부하다보면 자주 보았을 것이다. 하지만 논문에서 조차도 두 개념을 직관적으로 설명해주지 않는다.
 그래서 이번 시간에는 머신러닝에서 두 학습 방식에 대한 개념과 그 차이에 대해 쉽게 소개해보려고 한다.
 
@@ -14,26 +14,26 @@ Inductive Learning을 직역하면 귀납적 학습, Transductive Learning은 ..
 ### :pushpin: _Induction_
 > In contrast, _**induction**_ _**is reasoning**_ from observed training cases to _**general rules**_, which are then applied to the test cases.
 
-&nbsp Inductive Learning은 전통적인 지도 학습 (supervised learning)의 방식과 같다. 그 방식을 보자면, 우선 머신러닝 모델을 설계한 뒤 **오직 training dataset**만을 사용하여 분류 혹은 회귀를 위한 규칙(rule)을 스스로 추론한다. 즉, 관측된 (observed) 데이터는 training dataset 뿐이며 지도 학습을 통해 training dataset 분포에 최적화된 모델 파라미터를 계산한다. 이후 모델 학습이 끝난 뒤 unlabeled testing dataset의 label을 추론하는 이 지도 학습 방식이 바로 대표적인 Inductive Learning의 개념이다.
+&nbsp; Inductive Learning은 전통적인 지도 학습 (supervised learning)의 방식과 같다. 그 방식을 보자면, 우선 머신러닝 모델을 설계한 뒤 **오직 training dataset**만을 사용하여 분류 혹은 회귀를 위한 규칙(rule)을 스스로 추론한다. 즉, 관측된 (observed) 데이터는 training dataset 뿐이며 지도 학습을 통해 training dataset 분포에 최적화된 모델 파라미터를 계산한다. 이후 모델 학습이 끝난 뒤 unlabeled testing dataset의 label을 추론하는 이 지도 학습 방식이 바로 대표적인 Inductive Learning의 개념이다.
 
-&nbsp 이에 반해 Transductive Learning은 학습 시 사전에 미리 **training dataset** 뿐만 아니라 **testing dataset**도 알고 있는 (관측한) 상태이며, testing dataset의 label을 알지 못하지만 학습이 진행되는 동안 labeled data (training dataset)의 특징 공유 혹은 전파, 데이터간의 연관성, 특징 패턴 등 추가적인 정보를 활용함으로써 testing dataset의 label을 추론한다.
+&nbsp; 이에 반해 Transductive Learning은 학습 시 사전에 미리 **training dataset** 뿐만 아니라 **testing dataset**도 알고 있는 (관측한) 상태이며, testing dataset의 label을 알지 못하지만 학습이 진행되는 동안 labeled data (training dataset)의 특징 공유 혹은 전파, 데이터간의 연관성, 특징 패턴 등 추가적인 정보를 활용함으로써 testing dataset의 label을 추론한다.
 
- &nbsp 대표적인 Transductive Learning 기법으로는 **transductive SVM (TSVM)**, **graph-based label propagation algorithm (LPA)**, 그리고 **node-classification 기반 graph convolutional neural networks (GCN)의 feature propagation 기법** 등이 있다. 참고로 준지도 학습 (Semi-supervised Learning)과 비슷한 점이 많다.
+ &nbsp; 대표적인 Transductive Learning 기법으로는 **transductive SVM (TSVM)**, **graph-based label propagation algorithm (LPA)**, 그리고 **node-classification 기반 graph convolutional neural networks (GCN)의 feature propagation 기법** 등이 있다. 참고로 준지도 학습 (Semi-supervised Learning)과 비슷한 점이 많다.
  
  <br><br>
  ### :two: 차이점 정리
  
-&nbsp 이제 어느정도 Transductive Learning과 Inductive Learning의 정의에 대해 이해가 되었다면 두 학습 기법의 차이점에 대해 자세히 알 필요가 있다.
+&nbsp; 이제 어느정도 Transductive Learning과 Inductive Learning의 정의에 대해 이해가 되었다면 두 학습 기법의 차이점에 대해 자세히 알 필요가 있다.
 
-&nbsp 다시 한번 강조하자면, 두 기법의 가장 큰 차이는 Transductive Learning에서 모델 학습 시 training set과 testing set 둘 다 사용하는 반면, Inductive Leaning에서는 모델 학습 시 training set만 사용하며, 이후에 우리가 관측한 적 없던 새로운 testing dataset에 학습된 모델을 적용한다.
+&nbsp; 다시 한번 강조하자면, 두 기법의 가장 큰 차이는 Transductive Learning에서 모델 학습 시 training set과 testing set 둘 다 사용하는 반면, Inductive Leaning에서는 모델 학습 시 training set만 사용하며, 이후에 우리가 관측한 적 없던 새로운 testing dataset에 학습된 모델을 적용한다.
 
-&nbsp Inductive Learning에서는 새로운 데이터의 label을 추론할 수 있는 모델 (predictive model)을 생성하며, 이 때 새로운 데이터를 관측했다고 해서 학습 자체를 꼭 다시 할 필요는 없다. 왜냐하면, 이미 학습된 모델을 새로운 데이터에 적용하여 그 데이터의 label을 추론하면 되기 때문이다.
+&nbsp; Inductive Learning에서는 새로운 데이터의 label을 추론할 수 있는 모델 (predictive model)을 생성하며, 이 때 새로운 데이터를 관측했다고 해서 학습 자체를 꼭 다시 할 필요는 없다. 왜냐하면, 이미 학습된 모델을 새로운 데이터에 적용하여 그 데이터의 label을 추론하면 되기 때문이다.
 
 > 이때 주의할 점은, 분류 문제를 예로 들자면, 학습 시 사용한 데이터가 개와 고양이 뿐이었고, 새로 관측된 데이터가 개 또는 고양이에 관련된 데이터일 때 학습을 다시 할 필요가 없다는 것이다. 만약 새로 관측한 데이터가 코끼리 관련 데이터이고 코끼리도 분류할 수 있으면 좋겠다라고 한다면 코끼리 관련 데이터와 함께 다시 모델을 학습해야 하는건 당연하다.
 
-&nbsp 반면 **Transductive Learning은 predictive model을 생성하지 않는다.** 만약 새로운 데이터가 관측이 된다면 해당 데이터의 label을 예측하기 위해 labeled data와 같이 모델을 처음부터 다시 학습해야 한다.
+&nbsp; 반면 **Transductive Learning은 predictive model을 생성하지 않는다.** 만약 새로운 데이터가 관측이 된다면 해당 데이터의 label을 예측하기 위해 labeled data와 같이 모델을 처음부터 다시 학습해야 한다.
 
-&nbsp 따라서 Transductive Learning 같은 경우 새로운 unlabeled 데이터가 자주 관측되는 케이스에서 cost가 비쌀 수 있다. 반면, Inductive Learning 같은 경우 predictive model을 초기에 생성해두기 때문에 더 적은 cost로 빠른 시간안에 새로 관측된 데이터의 label을 예측할 수 있다. 참고로, 여기서 cost는 컴퓨팅 파워, 시간, 연산량 등을 의미함
+&nbsp; 따라서 Transductive Learning 같은 경우 새로운 unlabeled 데이터가 자주 관측되는 케이스에서 cost가 비쌀 수 있다. 반면, Inductive Learning 같은 경우 predictive model을 초기에 생성해두기 때문에 더 적은 cost로 빠른 시간안에 새로 관측된 데이터의 label을 예측할 수 있다. 참고로, 여기서 cost는 컴퓨팅 파워, 시간, 연산량 등을 의미함
 
 <center>
 
