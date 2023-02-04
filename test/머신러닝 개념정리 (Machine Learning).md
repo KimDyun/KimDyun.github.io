@@ -62,7 +62,7 @@
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
 
-&nbsp; 우선 위 그림 예시에서 **labeled data (training data)** 는 <font style="color:red;"> **A** </font>, <span style="color:red">**B**</span>, <span style="color:blue"> __C__ </font>, <font style="color:blue;">**D**</font>이고 <font style="color:red;">**A**</font>와 <font style="color:red;">**B**</font>는 **class <font style="color:red;">**red**</font>, <font style="color:blue;">**C**</font> 와 <font style="color:blue;">**D**</font> 는 **class** <font style="color:blue;">**blue**</font>, 나머지 **숫자** 들은 **unlabeled data (testing data)** 이다. 여기서 unlabeled data의 label을 추론해야 하는 상황일 때, Inductive Learning에서는 4개의 training data만을 사용하여 지도 학습 (supervised learning)을 수행한 후 학습된 예측 모델을 testing data에 적용하여 label을 추론하면 된다.
+&nbsp; 우선 위 그림 예시에서 **labeled data (training data)** 는 <font style="color:red;"> **A** </font>, <span style="color:red">**B**</span>, <span style="color:blue"> __C__ </font>, <font style="color:blue;">**D**</font>이고 <font style="color:red;">**A**</font>와 <font style="color:red;">**B**</font>는 **class** <font style="color:red;">**red**</font>, <font style="color:blue;">**C**</font> 와 <font style="color:blue;">**D**</font> 는 **class** <font style="color:blue;">**blue**</font>, 나머지 **숫자** 들은 **unlabeled data (testing data)** 이다. 여기서 unlabeled data의 label을 추론해야 하는 상황일 때, Inductive Learning에서는 4개의 training data만을 사용하여 지도 학습 (supervised learning)을 수행한 후 학습된 예측 모델을 testing data에 적용하여 label을 추론하면 된다.
 
 <br>
 <center>
