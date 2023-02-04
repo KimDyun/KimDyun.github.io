@@ -11,8 +11,11 @@
 ### :pushpin: _Transduction_
 > In logic, statistical inference, and supervised learning, _**Transduction**_ is reasoning from observed specific (training) cases to specific (test) cases.
 <br>
+
 ### :pushpin: _Induction_
+
 > In contrast, _**induction**_ _**is reasoning**_ from observed training cases to _**general rules**_, which are then applied to the test cases.
+
 <br>
 &nbsp; Inductive Learning은 전통적인 지도 학습 (supervised learning)의 방식과 같다. 그 방식을 보자면, 우선 머신러닝 모델을 설계한 뒤 **오직 training dataset**만을 사용하여 분류 혹은 회귀를 위한 규칙(rule)을 스스로 추론한다. 즉, 관측된 (observed) 데이터는 training dataset 뿐이며 지도 학습을 통해 training dataset 분포에 최적화된 모델 파라미터를 계산한다. 이후 모델 학습이 끝난 뒤 unlabeled testing dataset의 label을 추론하는 이 지도 학습 방식이 바로 대표적인 Inductive Learning의 개념이다.
 
