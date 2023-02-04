@@ -76,11 +76,13 @@
 <br>
 > 여기서, 숫자 10과 12가 잘못 분류되었다고 말할 수는 없다. 하지만, 학습 데이터가 상당히 적기 때문에 10과 12가 class red로 분류된 것에 대해 우리는 당연하게도 신뢰할 수 없다.
 
+![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG)
+
+![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG?raw=true)
+
 <br><br>
 <center>
 
-../images/Inductive_Trasductive_Learning_Comparison3.PNG
- 
 |![Figure 3](../images/Inductive_Trasductive_Learning_Comparison3.PNG)|
 | :--: |
 |<b> <font size = "4" > Figure 3 </font> </b>|
