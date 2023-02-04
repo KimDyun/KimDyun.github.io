@@ -57,7 +57,7 @@
 
 <center>
 
-|![Fig. 1](../images/Inductive_Trasductive_Learning_Comparison.png)|
+|![Fig. 1](./images/Inductive_Trasductive_Learning_Comparison.png)|
 | :--: |
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
@@ -67,7 +67,7 @@
 <br>
 <center>
 
-|![Fig. 2](../images/Inductive_Trasductive_Learning_Comparison2.png)|
+|![Fig. 2](../../images/Inductive_Trasductive_Learning_Comparison2.png)|
 | :--: |
 |<b> <font size = "4" > Figure 2 </font> </b>|
 </center>
