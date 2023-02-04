@@ -14,12 +14,12 @@
 
 ### :pushpin: _Induction_
 
-> In contrast, _**induction**_ _**is reasoning**_ from observed training cases to _**general rules**_, which are then applied to the test cases.
+> In contrast, _**induction**_ _**is reasoning**_ from observed training cases to _**general rules**_ , which are then applied to the test cases.
 
 <br>
-&nbsp; Inductive Learning은 전통적인 지도 학습 (supervised learning)의 방식과 같다. 그 방식을 보자면, 우선 머신러닝 모델을 설계한 뒤 **오직 training dataset**만을 사용하여 분류 혹은 회귀를 위한 규칙(rule)을 스스로 추론한다. 즉, 관측된 (observed) 데이터는 training dataset 뿐이며 지도 학습을 통해 training dataset 분포에 최적화된 모델 파라미터를 계산한다. 이후 모델 학습이 끝난 뒤 unlabeled testing dataset의 label을 추론하는 이 지도 학습 방식이 바로 대표적인 Inductive Learning의 개념이다.
+&nbsp; Inductive Learning은 전통적인 지도 학습 (supervised learning)의 방식과 같다. 그 방식을 보자면, 우선 머신러닝 모델을 설계한 뒤 **오직 training dataset** 만을 사용하여 분류 혹은 회귀를 위한 규칙(rule)을 스스로 추론한다. 즉, 관측된 (observed) 데이터는 training dataset 뿐이며 지도 학습을 통해 training dataset 분포에 최적화된 모델 파라미터를 계산한다. 이후 모델 학습이 끝난 뒤 unlabeled testing dataset의 label을 추론하는 이 지도 학습 방식이 바로 대표적인 Inductive Learning의 개념이다.
 
-&nbsp; 이에 반해 Transductive Learning은 학습 시 사전에 미리 **training dataset** 뿐만 아니라 **testing dataset**도 알고 있는 (관측한) 상태이며, testing dataset의 label을 알지 못하지만 학습이 진행되는 동안 labeled data (training dataset)의 특징 공유 혹은 전파, 데이터간의 연관성, 특징 패턴 등 추가적인 정보를 활용함으로써 testing dataset의 label을 추론한다.
+&nbsp; 이에 반해 Transductive Learning은 학습 시 사전에 미리 **training dataset** 뿐만 아니라 **testing dataset** 도 알고 있는 (관측한) 상태이며, testing dataset의 label을 알지 못하지만 학습이 진행되는 동안 labeled data (training dataset)의 특징 공유 혹은 전파, 데이터간의 연관성, 특징 패턴 등 추가적인 정보를 활용함으로써 testing dataset의 label을 추론한다.
 
  &nbsp; 대표적인 Transductive Learning 기법으로는 **transductive SVM (TSVM)**, **graph-based label propagation algorithm (LPA)**, 그리고 **node-classification 기반 graph convolutional neural networks (GCN)의 feature propagation 기법** 등이 있다. 참고로 준지도 학습 (Semi-supervised Learning)과 비슷한 점이 많다.
  
@@ -62,7 +62,7 @@
 |<b> <font size = "4" > Figure 1 </font> </b>|
 </center>
 
-&nbsp; 우선 위 그림 예시에서 **labeled data (training data)**는 <font style="color:red;">**A**</font>, <font style="color:red;">**B**</font>, <font style="color:blue;">**C**</font>, <font style="color:blue;">**D**</font>이고 <font style="color:red;">**A**</font>와 <font style="color:red;">**B**</font>는 **class** <font style="color:red;">**red**</font>, <font style="color:blue;">**C**</font>와 <font style="color:blue;">**D**</font>는 **class** <font style="color:blue;">**blue**</font>, 나머지 **숫자**들은 **unlabeled data (testing data)** 이다. 여기서 unlabeled data의 label을 추론해야 하는 상황일 때, Inductive Learning에서는 4개의 training data만을 사용하여 지도 학습 (supervised learning)을 수행한 후 학습된 예측 모델을 testing data에 적용하여 label을 추론하면 된다.
+&nbsp; 우선 위 그림 예시에서 **labeled data (training data)** 는 <font style="color:red;">**A**</font>, <font style="color:red;">**B**</font>, <font style="color:blue;">**C**</font>, <font style="color:blue;">**D**</font>이고 <font style="color:red;">**A**</font>와 <font style="color:red;">**B**</font>는 **class <font style="color:red;">**red**</font>, <font style="color:blue;">**C**</font> 와 <font style="color:blue;">**D**</font> 는 **class** <font style="color:blue;">**blue**</font>, 나머지 **숫자** 들은 **unlabeled data (testing data)** 이다. 여기서 unlabeled data의 label을 추론해야 하는 상황일 때, Inductive Learning에서는 4개의 training data만을 사용하여 지도 학습 (supervised learning)을 수행한 후 학습된 예측 모델을 testing data에 적용하여 label을 추론하면 된다.
 
 <br>
 <center>
@@ -94,7 +94,7 @@
 |<b> <font size = "4" > Figure 4 </font> </b>|
 </center>
 
-&nbsp; Inductive Learning에서는 이러한 엣지 추가 정보가 있다고 하더라도, 활용하기 어렵다. 왜냐하면 앞에서 언급했듯이, <font style="color:red;"> **우리는 학습 시 오직 Training dataset의 정보만 알 뿐, Testing dataset은 관측한 적 없기 때문이다.** </font> 반대로, **Transductive Learning**에서는 우리가 이미 Training dataset 뿐만 아니라 Testing dataset도 알고 있다. 다만, Testing dataset의 label만 모를 뿐, Testing dataset의 데이터 정보는 충분히 학습 때 활용할 수 있다. 여기서, 엣지 추가 정보까지 우리가 알고 있기 때문에 **연결성에 기반하여 Training dataset의 label을 Testing dataset에 전파할 수 있다.** **(Graph-based label propagation algorithm, LPA)** 이 예시에서의 접근법은 준지도학습 (Semi-supervised Learning) 방식이라고도 볼 수 있다. 그림 3과 다르게 이 때는 10과 12 노드는 class blue로 분류된다.
+&nbsp; Inductive Learning에서는 이러한 엣지 추가 정보가 있다고 하더라도, 활용하기 어렵다. 왜냐하면 앞에서 언급했듯이, **<font style="color:red;"> 우리는 학습 시 오직 Training dataset의 정보만 알 뿐, Testing dataset은 관측한 적 없기 때문이다. </font>** 반대로, **Transductive Learning** 에서는 우리가 이미 Training dataset 뿐만 아니라 Testing dataset도 알고 있다. 다만, Testing dataset의 label만 모를 뿐, Testing dataset의 데이터 정보는 충분히 학습 때 활용할 수 있다. 여기서, 엣지 추가 정보까지 우리가 알고 있기 때문에 **연결성에 기반하여 Training dataset의 label을 Testing dataset에 전파할 수 있다. (Graph-based label propagation algorithm, LPA)** 이 예시에서의 접근법은 준지도학습 (Semi-supervised Learning) 방식이라고도 볼 수 있다. 그림 3과 다르게 이 때는 10과 12 노드는 class blue로 분류된다.
 <br>
 > Transductive Learning에서는 우리가 사전에 Testing dataset도 알고 있다는 점과, 엣지 정보와 같은 유용한 추가 정보를 활용할 수 있다는 점이 핵심이다. 만약, 사전에 알고있는 Testing dataset이 없다면 Inductive Learning 만 선택할 수 있다. **(Inductive Learning에서는 predictive model을 생성하므로 새로운 데이터가 언제 관측되어도 상관없기 때문)**
 
