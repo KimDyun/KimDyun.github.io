@@ -40,7 +40,7 @@
 
 <center>
 
-  |<b> <font size = "4" > TABLE 1. &nbsp &nbsp Inductive Learning vs Transductive Learning </font> </b>|
+|<b> <font size = "4" > TABLE 1. &nbsp &nbsp Inductive Learning vs Transductive Learning </font> </b>|
 | :--: |
 |![Inductive Learning vs Transductive Learning](https://velog.velcdn.com/images/kimdyun/post/ea851cdd-9319-4862-a47e-99419b6effe2/image.png "Inductive Learning vs Transductive Learning")|
 </center>
@@ -63,6 +63,7 @@
 
 
 <br>
+
 <center>
 
 |![Figure 2](https://user-images.githubusercontent.com/74770095/216779277-14f6315e-cc9b-449f-b5aa-72b473b91605.PNG)|
